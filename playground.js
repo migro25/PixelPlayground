@@ -18,3 +18,9 @@ drawPixel(46, 45, "brown");
 drawPixel(46, 44, "brown");
 drawPixel(47, 45, "brown");
 drawPixel(45, 45, "brown");
+
+drawVerticalLine(41, 49, "yellow");
+drawVerticalLine(51, 49, "yellow");
+
+drawHorizontalLine(41, 51, "yellow");
+drawHorizontalLine(46, 51, "yellow");
