@@ -24,3 +24,5 @@ drawVerticalLine(51, 49, "yellow");
 
 drawHorizontalLine(41, 51, "yellow");
 drawHorizontalLine(46, 51, "yellow");
+drawHorizontalLine(41, 55, "blue");
+drawHorizontalLine(47, 55, "blue");
