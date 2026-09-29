@@ -37,6 +37,24 @@ function drawHorizontalLine(x, y, color) {
     drawPixel(x+4, y, color);
 }
 
+function drawHorizontalLine(x, y, length) {
+    for (let i = 0; i < length; i++) {
+        drawPixel(x + i, y, "blue");
+    }
+
+function drawVerticalLine(x, y, length) {
+    for (let i = 0; i < length; i++) {
+        drawPixel(x, y + i, "blue");
+    }
+
+function drawRectangle(x, y, width, height) {
+    drawHorizontalLine(x, y, width);
+    drawHorizontalLine(x, y + height - 1, width);
+ 
+    drawVerticalLine(x, y, height);
+    drawVerticalLine(x + width - 1, y, height);
+}
+
 clearScreen("black");
 
 // test code 
@@ -49,3 +67,4 @@ checkPixel(1,1, "black", "checkPixel(1,1)")
 
 // reset
 clearScreen("black");
+
