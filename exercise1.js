@@ -50,7 +50,31 @@ function drawRectangle(x, y, width, height) {
     drawVerticalLine(x + width - 1, y, height);
 }
 
+function drawVariableLengthHorizontalLine(x, y, color, length) {
+  for(let i = 0; i < length; i = i+1) {
+    drawPixel(x + i, y, color);
+  }
+}
+ 
+function drawVariableLengthVerticalLine(x, y, color, length) {
+  for(let i = 0; i < length; i++) {
+    drawPixel(x, y + i, color);
+  }
+}
+ 
+function drawDiagonalLine(x, y, color, length) {
+  for(let i = 0; i < length; i++) {
+    drawPixel(x + i, y + i, color);
+  }
+}
 
+function drawRectangle(x, y, color, width, height) {
+
+  for(let h = 0; h < height; h++) {
+    drawVariableLengthHorizontalLine(x, y + h, color, width);
+  }
+
+}
 
 function writeuselessnumbers(length) {
   for (let i = 0; i<length; i++) {

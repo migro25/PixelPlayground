@@ -6,7 +6,7 @@ console.log("hello World");
 
 drawHorizontalLine(10, 20, "green", 300);
 
-drawVerticalLine(10,20,"yellow", 400)
+drawVerticalLine(10,20, "yellow", 400)
 
-drawRectangle(20, 20, "orange", 20)
+drawDiagonalLine(2, 2, "yellow", 10);
 
