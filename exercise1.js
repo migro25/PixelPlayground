@@ -29,23 +29,18 @@ function drawPixel(x, y, color) {
   ctx.fillRect(x, y, 1, 1);
 }
 
-function drawHorizontalLine(x, y, color) {
-    drawPixel(x, y, color);
-    drawPixel(x+1, y, color);
-    drawPixel(x+2, y, color);
-    drawPixel(x+3, y, color);
-    drawPixel(x+4, y, color);
+
+function drawHorizontalLine(x, y, color, length) {
+  for(let i= 0; i < length; i = i+1) {
+    drawPixel(x+i, y, color);
+  }
 }
 
-function drawHorizontalLine(x, y, length) {
-    for (let i = 0; i < length; i++) {
-        drawPixel(x + i, y, "blue");
+function drawVerticalLine (x, y, color, length) {
+    for (let i = 0; i < length; i = i +1) {
+        drawPixel(x, y + i, color);
     }
-
-function drawVerticalLine(x, y, length) {
-    for (let i = 0; i < length; i++) {
-        drawPixel(x, y + i, "blue");
-    }
+  }
 
 function drawRectangle(x, y, width, height) {
     drawHorizontalLine(x, y, width);
@@ -54,6 +49,18 @@ function drawRectangle(x, y, width, height) {
     drawVerticalLine(x, y, height);
     drawVerticalLine(x + width - 1, y, height);
 }
+
+
+
+function writeuselessnumbers(length) {
+  for (let i = 0; i<length; i++) {
+    console.log(i);
+  }
+}
+
+writeuselessnumbers(10);
+
+
 
 clearScreen("black");
 
