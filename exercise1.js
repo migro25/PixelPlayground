@@ -45,11 +45,6 @@ function drawVerticalLine(x, y, color) {
     drawPixel(x, y+4, color);
 }
 
-function drawLine(x, y, color, length, direction) {
-  (if direction === "horizontal") {
-    drawHorizontalLine(x,y,color, length);
-  }
-}
 
 clearScreen("black");
 

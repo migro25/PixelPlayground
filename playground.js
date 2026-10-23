@@ -26,3 +26,14 @@ drawHorizontalLine(41, 51, "yellow");
 drawHorizontalLine(46, 51, "yellow");
 drawHorizontalLine(41, 55, "blue");
 drawHorizontalLine(47, 55, "blue");
+
+
+let myname = "Michael";
+let age = "25";
+let favoritefood = "Pizza";
+
+let sen1 = "I am " + myname  + " , I am " + age + " years old and consit of " + favoritefood;
+let sen2 = `I am ${myname}, I am ${age} years old and consist of ${favoritefood}`;
+
+console.log(sen1);
+console.log(sen2);
